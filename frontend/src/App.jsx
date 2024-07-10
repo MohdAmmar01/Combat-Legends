@@ -35,7 +35,7 @@ function App() {
   const [play, { stop }] = useSound(bgMusic, { volume: 0.25,loop:true });
 
   useEffect(() => {
-    const newSocket = io('http://localhost:8000');
+    const newSocket = io('https://combat-legends.onrender.com');
     setSocket(newSocket);
     setLoading(false);
      
