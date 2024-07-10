@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./assets/background.gif');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+.match{
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+}
+h1{
+  font-size: 25px;
+  margin: 10px;
+  align-self: center;
+  color: rgb(76, 85, 12);
+}
+h2{
+  font-size: 25px;
+  margin: 5px;
+  color: white;
+}
+img{
+  width: 400px;
+  height: auto;
+}
+.modal{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  padding: 15px;
+  align-items: center;
+}
+input{
+  margin: 10px 0px;
+  width: 95%;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  outline: none;
+}
+button{
+  width: 100px;
+  align-self: flex-end;
+  margin: 10px 0px;
+  background-color: #332408;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: auto;
+  padding: 10px;
+}
+.header{
+  width: 95%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0px;
+  align-self: center;
+  justify-content: space-between;
+}
+.header_part2{
+  width: 10%;
+  height: auto;
+}
+.header_part1{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  
+}
+.header_part1 div{
+  height: 30px;
+  color: white;
+  border-radius: 15px;
+  background-color: #2a2161;
+}
+.header_part3 div{
+  height: 30px;
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  background-color: #504800
+}
+.header_part3{
+  display: flex;
+  flex-direction: column;
+  
+  width: 40%;
+ 
+}
+.players{
+  height: 85%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.img_1{
+  position: relative;
+}
+@keyframes attackAnimation {
+  0% { transform: rotate(0deg) translate(0, 0); }
+  50% { transform: rotate(45deg) translate(0, 20px); }
+  100% { transform: rotate(0deg) translate(0, 0); }
+}
+
+
+/* Apply animation to attacking player's hand */
+.img_1.attacking {
+  animation: attackAnimation 1s linear;
+}
+.reject{
+  background-color: red;
+}
+.loading_container{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./assets/background.gif');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loading{
+  width: 100px;
+  height: auto;
+}
